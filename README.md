@@ -9,7 +9,7 @@ The larger the prefix size, the more structured of an output generated (too larg
    
 ### What is a Markov Chain?
 ---------------------------
-A Markov Chain is a stochastic process in which the conditional probability distribution of future states of the process epends only upon the present state, not on the sequence of events that preceded it. [Wikipedia](https://en.wikipedia.org/wiki/Markov_chain)
+A Markov Chain is a stochastic process in which the conditional probability distribution of future states of the process depends only upon the present state, not on the sequence of events that preceded it. [Wikipedia](https://en.wikipedia.org/wiki/Markov_chain)
 
 A Markov Chain tells you the probability of transitioning from one state to another based only on the current state of the Markov Chain.
 
