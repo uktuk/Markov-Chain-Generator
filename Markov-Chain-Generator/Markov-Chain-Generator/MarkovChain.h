@@ -23,9 +23,10 @@ public:
 	MarkovChain(int prefixSize, int maxNumWordsGen);
 	~MarkovChain();
 
-	// Builds the data map of the markov chain from an input source
-	void ConstructChain();
-
+	// Builds a new data map of the markov chain from an input source
+	void ConstructChain(const std::string& fileLocation, bool clearExistingData = true);
+	void ConstructChain(const std::vector<std::string>& inputData, bool clearExistingData = true);
+	
 	// Generates an output from the constructed data map
 	std::string GenerateOutput();
 
@@ -39,10 +40,11 @@ public:
 	const int GetMaxNumWordsGen() const;
 
 protected:
+	void InitDataMap();
+
 	int prefixSize;
 	int maxNumWordsGen;
 
 	Prefix dqPrefix;
 	std::map<Prefix, std::vector<std::string>> dataMap;
 };
-
