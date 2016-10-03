@@ -11,7 +11,7 @@ The larger the prefix size, the more structured of an output generated (too larg
 ---------------------------
 A Markov Chain is a stochastic process in which the conditional probability distribution of future states of the process epends only upon the present state, not on the sequence of events that preceded it. [Wikipedia](https://en.wikipedia.org/wiki/Markov_chain)
 
-Ths means the Markov Chain tells you the probability of transitioning to another state based only on the current state of the Markov Chain.
+A Markov Chain tells you the probability of transitioning from one state to another based only on the current state of the Markov Chain.
 
 An effective use of this is text generation of varying degrees of randomness, based off some input text.
 
